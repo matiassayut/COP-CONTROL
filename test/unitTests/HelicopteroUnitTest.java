@@ -10,6 +10,9 @@ import copControl.Posicion;
 import avion.Helicoptero;
 
 public class HelicopteroUnitTest {
+	
+	
+	// clase unit test hecha por el profesor
 
     private Helicoptero helicoptero;
     private Posicion posIni;
@@ -59,7 +62,7 @@ public class HelicopteroUnitTest {
         assertTrue(helicoptero.puedeAterrizar(pista), "El helicóptero debería poder aterrizar en la pista.");
     }
 */
-    /*
+
     @Test
     void testAvanzar() {
         helicoptero.arrancar(); // Aseguramos que el helicóptero está en movimiento
@@ -69,5 +72,5 @@ public class HelicopteroUnitTest {
         // Por ejemplo, verificar la posición del helicóptero o el estado de la trayectoria
         // assertEquals(expectedState, helicoptero.getTrayectoria().getEstado(), "El helicóptero debería avanzar.");
     }
-    */
+
 }

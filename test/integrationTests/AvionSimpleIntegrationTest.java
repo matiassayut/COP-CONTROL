@@ -15,6 +15,8 @@ import org.junit.jupiter.api.Test;
 
 public class AvionSimpleIntegrationTest{
 	
+	// clase integration test hecha por el profesor
+	
 	@BeforeEach
 	public void setUp(){
 		
