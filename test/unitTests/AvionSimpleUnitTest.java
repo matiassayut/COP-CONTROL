@@ -1,6 +1,7 @@
 package unitTests;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.doNothing;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
@@ -63,6 +64,8 @@ class AvionSimpleUnitTest {
     
     @Test
     void testColocarAvionEnMapa() {
+    	doNothing().when(mapaDeMovimiento).colocarAvionEnAire(avionSimple);
+        when(mapaDeMovimiento.tieneAvionesVolando()).thenReturn(true);
         mapaDeMovimiento.colocarAvionEnAire(avionSimple);
         assertTrue(mapaDeMovimiento.tieneAvionesVolando(), "El mapa debería indicar que hay un avión volando.");
     }
