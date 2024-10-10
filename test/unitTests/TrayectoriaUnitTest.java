@@ -19,7 +19,6 @@ public class TrayectoriaUnitTest {
 
     @BeforeEach
     void setUp() {
-        //posIni = new Posicion(0, 0);
     	posIni = mock(Posicion.class);  // Mock de Posicion
         posFin = new Posicion(10, 10);
         mapaDeMovimiento = mock(Mapa.class);
