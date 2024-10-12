@@ -82,8 +82,7 @@ public class MapaUnitTest {
 
 	@Test
 	public void testPosicionFueraDeDimension() {
-		Mapa mapa = new Mapa();
-
+		
 		// Posición fuera de los límites del mapa
 		Posicion posicion = new Posicion(-100, -300);
 
